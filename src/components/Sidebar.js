@@ -22,54 +22,59 @@ const Sidebar = () => {
             <HR />
             <Center>
                 <List>
-                    <ListItem>
+                    <MainTitle>MAIN</MainTitle>
+                    <Item>
                         <DashboardIcon />
-                        <ListItemTitle>Dashboard</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Dashboard</ItemTitle>
+                    </Item>
+                    <MainTitle>LISTS</MainTitle>
+                    <Item>
                         <Person2OutlinedIcon />
-                        <ListItemTitle>Users</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Users</ItemTitle>
+                    </Item>
+                    <Item>
                         <StoreIcon />
-                        <ListItemTitle>Products</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Products</ItemTitle>
+                    </Item>
+                    <Item>
                         <CreditCardIcon />
-                        <ListItemTitle>Orders</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Orders</ItemTitle>
+                    </Item>
+                    <Item>
                         <LocalShippingIcon />
-                        <ListItemTitle>Delivery</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Delivery</ItemTitle>
+                    </Item>
+                    <MainTitle>USEFUL</MainTitle>
+                    <Item>
                         <InsertChartIcon />
-                        <ListItemTitle>Stats</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Stats</ItemTitle>
+                    </Item>
+                    <Item>
                         <NotificationsNoneIcon />
-                        <ListItemTitle>Notifications</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Notifications</ItemTitle>
+                    </Item>
+                    <MainTitle>SERIVCE</MainTitle>
+                    <Item>
                         <SettingsSystemDaydreamIcon />
-                        <ListItemTitle>System Health</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>System Health</ItemTitle>
+                    </Item>
+                    <Item>
                         <PsychologyOutlinedIcon />
-                        <ListItemTitle>Logs</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Logs</ItemTitle>
+                    </Item>
+                    <Item>
                         <SettingsApplicationsIcon />
-                        <ListItemTitle>Settings</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Settings</ItemTitle>
+                    </Item>
+                    <MainTitle>USER</MainTitle>
+                    <Item>
                         <AccountCircleOutlinedIcon />
-                        <ListItemTitle>Profile</ListItemTitle>
-                    </ListItem>
-                    <ListItem>
+                        <ItemTitle>Profile</ItemTitle>
+                    </Item>
+                    <Item>
                         <ExitToAppOutlinedIcon />
-                        <ListItemTitle>Logout</ListItemTitle>
-                    </ListItem>
+                        <ItemTitle>Logout</ItemTitle>
+                    </Item>
                 </List>
             </Center>
             <Bottom>
@@ -114,13 +119,18 @@ const List = styled.ul`
     padding: 0;
 `;
 
-const ListItem = styled.li`
+const Item = styled.li`
     
 `;
 
-const ListItemTitle = styled.span`
+const ItemTitle = styled.span`
     
 `;
+
+const MainTitle = styled.p`
+    
+`;
+
 
 
 const Bottom = styled.div`
