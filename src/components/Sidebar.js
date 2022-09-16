@@ -4,9 +4,15 @@ import styled from "styled-components";
 const Sidebar = () => {
     return (
         <Container>
-            <Top></Top>
-            <Center></Center>
-            <Bottom></Bottom>
+            <Top>
+                <Title>Logo</Title>
+            </Top>
+            <Center>
+                <Title>List</Title>
+            </Center>
+            <Bottom>
+                <Title>Color Options</Title>
+            </Bottom>
         </Container>
     )
 }
@@ -24,6 +30,10 @@ const Center = styled.div`
 `;
 
 const Bottom = styled.div`
+    
+`;
+
+const Title = styled.h1`
     
 `;
 

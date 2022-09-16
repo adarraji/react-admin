@@ -5,9 +5,9 @@ import Sidebar from "../components/Sidebar";
 const home = () => {
     return (
         <Container>
-            <SideBarContainer>
-                <Sidebar />
-            </SideBarContainer>
+
+            <Sidebar />
+
         </Container>
     )
 }
@@ -16,8 +16,5 @@ const Container = styled.div`
     
 `;
 
-const SideBarContainer = styled.div`
-    background-color: green;
-`;
 
 export default home
