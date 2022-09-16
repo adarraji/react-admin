@@ -122,6 +122,8 @@ const List = styled.ul`
 const Item = styled.li`
     display: flex;
     align-items: start;
+    padding: 5px;
+    cursor: pointer;
 `;
 
 const ItemTitle = styled.span`
