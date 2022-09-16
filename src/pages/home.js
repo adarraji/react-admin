@@ -1,20 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Sidebar from "../components/Sidebar";
 
 const home = () => {
     return (
         <Container>
-            <Title>Home</Title>
+            <SideBarContainer>
+                <Sidebar />
+            </SideBarContainer>
         </Container>
     )
 }
 
 const Container = styled.div`
-    background-color: purple;
+    
 `;
 
-const Title = styled.h1`
-    color: white;
+const SideBarContainer = styled.div`
+    background-color: green;
 `;
 
 export default home
