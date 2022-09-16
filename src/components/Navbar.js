@@ -1,9 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 const Navbar = () => {
     return (
-        <div>Navbar</div>
+        <div>
+            <Container>
+                <Wrapper>
+                    <Search>
+                        <Input type="text" placeholder="Search..." />
+                        <SearchOutlinedIcon />
+                    </Search>
+                </Wrapper>
+            </Container>
+        </div>
     )
 }
 
@@ -15,8 +25,20 @@ const Wrapper = styled.div`
    
 `;
 
-const Search = styled.input`
-   
+const Search = styled.div`
+   display: flex;
+   align-items: center;
+   border: 0.5px solid lightgray;
+   padding: 3px;
+`;
+
+const Input = styled.input`
+   border: none;
+   outline: none;
+   background: transparent;
+   &::placeholder {
+          font-size: 12px;
+        }
 `;
 
 const Item = styled.div`
