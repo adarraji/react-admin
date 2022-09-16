@@ -24,56 +24,80 @@ const Sidebar = () => {
                 <List>
                     <MainTitle>MAIN</MainTitle>
                     <Item>
-                        <DashboardIcon />
-                        <ItemTitle>Dashboard</ItemTitle>
+                        <Icon>
+                            <DashboardIcon />
+                        </Icon>
+                        <ItemText>Dashboard</ItemText>
                     </Item>
                     <MainTitle>LISTS</MainTitle>
                     <Item>
-                        <Person2OutlinedIcon />
-                        <ItemTitle>Users</ItemTitle>
+                        <Icon>
+                            <Person2OutlinedIcon />
+                        </Icon>
+                        <ItemText>Users</ItemText>
                     </Item>
                     <Item>
-                        <StoreIcon />
-                        <ItemTitle>Products</ItemTitle>
+                        <Icon>
+                            <StoreIcon />
+                        </Icon>
+                        <ItemText>Products</ItemText>
                     </Item>
                     <Item>
-                        <CreditCardIcon />
-                        <ItemTitle>Orders</ItemTitle>
+                        <Icon>
+                            <CreditCardIcon />
+                        </Icon>
+                        <ItemText>Orders</ItemText>
                     </Item>
                     <Item>
-                        <LocalShippingIcon />
-                        <ItemTitle>Delivery</ItemTitle>
+                        <Icon>
+                            <LocalShippingIcon />
+                        </Icon>
+                        <ItemText>Delivery</ItemText>
                     </Item>
                     <MainTitle>USEFUL</MainTitle>
                     <Item>
-                        <InsertChartIcon />
-                        <ItemTitle>Stats</ItemTitle>
+                        <Icon>
+                            <InsertChartIcon />
+                        </Icon>
+                        <ItemText>Stats</ItemText>
                     </Item>
                     <Item>
-                        <NotificationsNoneIcon />
-                        <ItemTitle>Notifications</ItemTitle>
+                        <Icon>
+                            <NotificationsNoneIcon />
+                        </Icon>
+                        <ItemText>Notifications</ItemText>
                     </Item>
                     <MainTitle>SERIVCE</MainTitle>
                     <Item>
-                        <SettingsSystemDaydreamIcon />
-                        <ItemTitle>System Health</ItemTitle>
+                        <Icon>
+                            <SettingsSystemDaydreamIcon />
+                        </Icon>
+                        <ItemText>System Health</ItemText>
                     </Item>
                     <Item>
-                        <PsychologyOutlinedIcon />
-                        <ItemTitle>Logs</ItemTitle>
+                        <Icon>
+                            <PsychologyOutlinedIcon />
+                        </Icon>
+                        <ItemText>Logs</ItemText>
                     </Item>
                     <Item>
-                        <SettingsApplicationsIcon />
-                        <ItemTitle>Settings</ItemTitle>
+                        <Icon>
+                            <SettingsApplicationsIcon />
+                        </Icon>
+                        <ItemText>Settings</ItemText>
                     </Item>
                     <MainTitle>USER</MainTitle>
                     <Item>
-                        <AccountCircleOutlinedIcon />
-                        <ItemTitle>Profile</ItemTitle>
+                        <Icon>
+                            <AccountCircleOutlinedIcon />
+                        </Icon>
+                        <ItemText>Profile</ItemText>
                     </Item>
                     <Item>
-                        <ExitToAppOutlinedIcon />
-                        <ItemTitle>Logout</ItemTitle>
+                        <Icon>
+                            <ExitToAppOutlinedIcon />
+                        </Icon>
+                        <ItemText>Logout</ItemText>
                     </Item>
                 </List>
             </Center>
@@ -130,8 +154,11 @@ const Item = styled.li`
     }
 `;
 
-const ItemTitle = styled.span`
-    
+const ItemText = styled.span`
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    margin-left: 10px;
 `;
 
 const MainTitle = styled.p`
@@ -142,7 +169,10 @@ const MainTitle = styled.p`
     margin-bottom: 5px;
 `;
 
-
+const Icon = styled.div`
+    font-size: 18px;
+    color: #7451f8;
+`;
 
 const Bottom = styled.div`
     
