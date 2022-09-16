@@ -33,7 +33,9 @@ const Top = styled.div`
 `;
 
 const LogoTitle = styled.span`
-    
+    font-size: 20px;
+    font-weight: bold;
+    color: #6439ff;
 `;
 
 const Center = styled.div`
