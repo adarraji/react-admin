@@ -19,38 +19,27 @@ const Navbar = () => {
                     </Search>
                     <Items>
                         <Item>
-                            <Icon>
-                                <LanguageOutlinedIcon />
-                            </Icon>
+                            <LanguageOutlinedIcon style={{ "font-size": "20px" }} />
+                            English
                         </Item>
                         <Item>
-                            <Icon>
-                                <DarkModeOutlinedIcon />
-                            </Icon>
+                            <DarkModeOutlinedIcon style={{ "font-size": "20px" }} />
                         </Item>
                         <Item>
-                            <Icon>
-                                <FullscreenExitOutlinedIcon />
-                            </Icon>
+                            <FullscreenExitOutlinedIcon style={{ "font-size": "20px" }} />
                         </Item>
                         <Item>
-                            <Icon>
-                                <NotificationsNoneOutlinedIcon />
-                            </Icon>
+                            <NotificationsNoneOutlinedIcon style={{ "font-size": "20px" }} />
                         </Item>
                         <Item>
-                            <Icon>
-                                <ChatBubbleOutlineOutlinedIcon />
-                            </Icon>
+                            <ChatBubbleOutlineOutlinedIcon style={{ "font-size": "20px" }} />
                         </Item>
                         <Item>
-                            <Icon>
-                                <ListOutlinedIcon />
-                            </Icon>
+                            <ListOutlinedIcon style={{ "font-size": "20px" }} />
                         </Item>
-                        <Item>
+                        {/* <Item>
                             <Image alt="" src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                        </Item>
+                        </Item> */}
                     </Items>
                 </Wrapper>
             </Container>
@@ -59,11 +48,20 @@ const Navbar = () => {
 }
 
 const Container = styled.div`
-   
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: gray;
 `;
 
 const Wrapper = styled.div`
-   
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
 `;
 
 const Search = styled.div`
@@ -83,16 +81,15 @@ const Input = styled.input`
 `;
 
 const Items = styled.div`
-   
+   display: flex;
+   align-items: center;   
 `;
 
 
 const Item = styled.div`
-   
-`;
-
-const Icon = styled.div`
-   
+   display: flex;
+   align-items: center; 
+   margin: 20px;
 `;
 
 const Image = styled.img`
