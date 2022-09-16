@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 const home = () => {
     return (
         <Container>
             <Sidebar />
-            <HomeContainer>Home container</HomeContainer>
+            <HomeContainer>
+                <Navbar />
+                Home container
+            </HomeContainer>
         </Container>
     )
 }
