@@ -124,6 +124,10 @@ const Item = styled.li`
     align-items: start;
     padding: 5px;
     cursor: pointer;
+
+    &:hover {
+        background-color: #ece8ff;
+    }
 `;
 
 const ItemTitle = styled.span`
