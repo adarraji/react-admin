@@ -5,13 +5,17 @@ const Sidebar = () => {
     return (
         <Container>
             <Top>
-                <Title>Logo</Title>
+                <LogoTitle>Logo</LogoTitle>
             </Top>
             <Center>
-                <Title>List</Title>
+                <DashboardList>
+                    <DashboardItem>Dashboard Item</DashboardItem>
+                    <DashboardItem>Dashboard Item</DashboardItem>
+                    <DashboardItem>Dashboard Item</DashboardItem>
+                </DashboardList>
             </Center>
             <Bottom>
-                <Title>Color Options</Title>
+                Color Options
             </Bottom>
         </Container>
     )
@@ -25,16 +29,27 @@ const Top = styled.div`
     
 `;
 
+const LogoTitle = styled.span`
+    
+`;
+
 const Center = styled.div`
     
 `;
+
+const DashboardList = styled.ul`
+    
+`;
+
+const DashboardItem = styled.li`
+    
+`;
+
 
 const Bottom = styled.div`
     
 `;
 
-const Title = styled.h1`
-    
-`;
+
 
 export default Sidebar
