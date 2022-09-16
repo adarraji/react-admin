@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+import Widget from "../components/Widget";
 
 const home = () => {
     return (
@@ -10,7 +11,10 @@ const home = () => {
             <HomeContainer>
                 <Navbar />
                 <Widgets>
-
+                    <Widget />
+                    <Widget />
+                    <Widget />
+                    <Widget />
                 </Widgets>
             </HomeContainer>
         </Container>
