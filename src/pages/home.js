@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const HomeContainer = styled.div`   
-    flex:5;
+    flex:6;
 `;
 
 
