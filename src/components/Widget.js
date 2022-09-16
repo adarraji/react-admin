@@ -1,11 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 
 const Widget = () => {
     return (
         <Container>
-            <Left>LEFT</Left>
-            <Right>RIGHT</Right>
+            <Left>
+                <Title>USERS</Title>
+                <Counter>21312</Counter>
+                <Link>See all users</Link>
+            </Left>
+            <Right>
+                <Percentage>
+                    <KeyboardArrowUpIcon />
+                    20%
+                </Percentage>
+                <PersonOutlinedIcon />
+            </Right>
         </Container>
     )
 }
@@ -21,10 +33,31 @@ const Container = styled.div`
     height: 100px;
 `;
 
-const Left = styled.div`   
+const Left = styled.div`
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
 `;
 
 const Right = styled.div`
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+const Title = styled.span`
+`;
+
+
+const Counter = styled.span`
+`;
+
+
+const Link = styled.span`
+`;
+
+
+const Percentage = styled.div`
 `;
 
 
