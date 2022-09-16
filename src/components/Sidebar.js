@@ -24,6 +24,7 @@ const Sidebar = () => {
 
 const Container = styled.div`     
      flex:1;
+     border-right: 0.5px solid lightgray;
 `;
 
 const Top = styled.div`
@@ -43,6 +44,8 @@ const HR = styled.hr`
     height: 0;
     border: 0.5px solid lightgray;
 `;
+
+
 
 const Center = styled.div`
     
