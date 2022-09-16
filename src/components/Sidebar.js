@@ -1,6 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import StoreIcon from '@mui/icons-material/Store';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import InsertChartIcon from '@mui/icons-material/InsertChart';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
+import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 
 const Sidebar = () => {
     return (
@@ -16,36 +27,47 @@ const Sidebar = () => {
                         <ListItemTitle>Dashboard</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <Person2OutlinedIcon />
                         <ListItemTitle>Users</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <StoreIcon />
                         <ListItemTitle>Products</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <CreditCardIcon />
                         <ListItemTitle>Orders</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <LocalShippingIcon />
                         <ListItemTitle>Delivery</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <InsertChartIcon />
                         <ListItemTitle>Stats</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <NotificationsNoneIcon />
                         <ListItemTitle>Notifications</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <SettingsSystemDaydreamIcon />
                         <ListItemTitle>System Health</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <PsychologyOutlinedIcon />
                         <ListItemTitle>Logs</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <SettingsApplicationsIcon />
                         <ListItemTitle>Settings</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <AccountCircleOutlinedIcon />
                         <ListItemTitle>Profile</ListItemTitle>
                     </ListItem>
                     <ListItem>
+                        <ExitToAppOutlinedIcon />
                         <ListItemTitle>Logout</ListItemTitle>
                     </ListItem>
                 </List>
