@@ -9,7 +9,9 @@ const home = () => {
             <Sidebar />
             <HomeContainer>
                 <Navbar />
-                Home container
+                <Widgets>
+
+                </Widgets>
             </HomeContainer>
         </Container>
     )
@@ -22,6 +24,11 @@ const Container = styled.div`
 const HomeContainer = styled.div`   
     flex:6;
 `;
+
+const Widgets = styled.div`
+   display: flex;
+`;
+
 
 
 export default home
