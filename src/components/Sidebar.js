@@ -26,7 +26,10 @@ const Container = styled.div`
 `;
 
 const Top = styled.div`
-    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 const LogoTitle = styled.span`
