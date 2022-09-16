@@ -5,5 +5,7 @@
 * HTML
 * CSS
 * Javascript
-* React* 
+* React
 * styled-components
+* Material-UI
+* React Router
