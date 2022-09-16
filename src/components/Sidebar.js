@@ -102,8 +102,9 @@ const Sidebar = () => {
                 </List>
             </Center>
             <Bottom>
-                <ColorOption>LIGHT</ColorOption>
-                <ColorOption>DARK</ColorOption>
+                <ColorOption></ColorOption>
+                <ColorOption></ColorOption>
+                <ColorOption></ColorOption>
             </Bottom>
         </Container>
     )
@@ -182,13 +183,24 @@ const Bottom = styled.div`
 `;
 
 const ColorOption = styled.div`
-    flex:1;
     margin: 5px;
     width: 20px;
     height: 20px;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #7451f8;
+
+    &:nth-child(1) {
+        background-color: whitesmoke;        
+    }
+    
+    &:nth-child(2) {
+        background-color: #333;        
+    }
+
+    &:nth-child(3) {
+        background-color: darkblue;        
+    }
 `;
 
 
