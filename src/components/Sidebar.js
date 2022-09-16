@@ -22,87 +22,86 @@ const Sidebar = () => {
             <HR />
             <Center>
                 <List>
-                    <MainTitle>MAIN</MainTitle>
+                    <Title>MAIN</Title>
                     <Item>
                         <Icon>
                             <DashboardIcon />
                         </Icon>
-                        <ItemText>Dashboard</ItemText>
+                        <Text>Dashboard</Text>
                     </Item>
-                    <MainTitle>LISTS</MainTitle>
+                    <Title>LISTS</Title>
                     <Item>
                         <Icon>
                             <Person2OutlinedIcon />
                         </Icon>
-                        <ItemText>Users</ItemText>
+                        <Text>Users</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <StoreIcon />
                         </Icon>
-                        <ItemText>Products</ItemText>
+                        <Text>Products</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <CreditCardIcon />
                         </Icon>
-                        <ItemText>Orders</ItemText>
+                        <Text>Orders</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <LocalShippingIcon />
                         </Icon>
-                        <ItemText>Delivery</ItemText>
+                        <Text>Delivery</Text>
                     </Item>
-                    <MainTitle>USEFUL</MainTitle>
+                    <Title>USEFUL</Title>
                     <Item>
                         <Icon>
                             <InsertChartIcon />
                         </Icon>
-                        <ItemText>Stats</ItemText>
+                        <Text>Stats</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <NotificationsNoneIcon />
                         </Icon>
-                        <ItemText>Notifications</ItemText>
+                        <Text>Notifications</Text>
                     </Item>
-                    <MainTitle>SERIVCE</MainTitle>
+                    <Title>SERIVCE</Title>
                     <Item>
                         <Icon>
                             <SettingsSystemDaydreamIcon />
                         </Icon>
-                        <ItemText>System Health</ItemText>
+                        <Text>System Health</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <PsychologyOutlinedIcon />
                         </Icon>
-                        <ItemText>Logs</ItemText>
+                        <Text>Logs</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <SettingsApplicationsIcon />
                         </Icon>
-                        <ItemText>Settings</ItemText>
+                        <Text>Settings</Text>
                     </Item>
-                    <MainTitle>USER</MainTitle>
+                    <Title>USER</Title>
                     <Item>
                         <Icon>
                             <AccountCircleOutlinedIcon />
                         </Icon>
-                        <ItemText>Profile</ItemText>
+                        <Text>Profile</Text>
                     </Item>
                     <Item>
                         <Icon>
                             <ExitToAppOutlinedIcon />
                         </Icon>
-                        <ItemText>Logout</ItemText>
+                        <Text>Logout</Text>
                     </Item>
                 </List>
             </Center>
             <Bottom>
-                <ColorOption></ColorOption>
                 <ColorOption></ColorOption>
                 <ColorOption></ColorOption>
             </Bottom>
@@ -156,14 +155,14 @@ const Item = styled.li`
     }
 `;
 
-const ItemText = styled.span`
+const Text = styled.span`
     font-size: 13px;
     font-weight: 600;
     color: #888;
     margin-left: 10px;
 `;
 
-const MainTitle = styled.p`
+const Title = styled.p`
     font-size: 10px;
     font-weight: bold;
     color: #999;
@@ -196,11 +195,7 @@ const ColorOption = styled.div`
     
     &:nth-child(2) {
         background-color: #333;        
-    }
-
-    &:nth-child(3) {
-        background-color: darkblue;        
-    }
+    }   
 `;
 
 
