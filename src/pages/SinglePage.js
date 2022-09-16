@@ -1,9 +1,9 @@
 import React from "react"
 
-const single = () => {
+const SinglePage = () => {
     return (
         <div>single</div>
     )
 }
 
-export default single
+export default SinglePage

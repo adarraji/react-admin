@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import List from './pages/List';
-import Single from './pages/Single';
+import SinglePage from './pages/SinglePage';
 import NewPage from './pages/NewPage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -15,7 +15,12 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="users">
             <Route index element={<List />} />
-            <Route path=":userId" element={<Single />} />
+            <Route path=":userId" element={<SinglePage />} />
+            <Route path="new" element={<NewPage />} />
+          </Route>
+          <Route path="products">
+            <Route index element={<List />} />
+            <Route path=":productId" element={<SinglePage />} />
             <Route path="new" element={<NewPage />} />
           </Route>
         </Route>
