@@ -25,6 +25,8 @@ const Sidebar = () => {
 const Container = styled.div`     
      flex:1;
      border-right: 0.5px solid lightgray;
+     min-height: 100vh;
+     background-color: white;
 `;
 
 const Top = styled.div`
