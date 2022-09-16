@@ -30,9 +30,11 @@ const Navbar = () => {
                         </Item>
                         <Item>
                             <NotificationsNoneOutlinedIcon style={{ "font-size": "20px" }} />
+                            <Counter>1</Counter>
                         </Item>
                         <Item>
                             <ChatBubbleOutlineOutlinedIcon style={{ "font-size": "20px" }} />
+                            <Counter>2</Counter>
                         </Item>
                         <Item>
                             <ListOutlinedIcon style={{ "font-size": "20px" }} />
@@ -90,12 +92,29 @@ const Item = styled.div`
    display: flex;
    align-items: center; 
    margin: 20px;
+   position: relative;  
 `;
 
 const Image = styled.img`
     width: 30px;
     height: 30px;
     border-radius: 50%;
+`;
+
+const Counter = styled.div`
+     width: 15px;
+          height: 15px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: bold;
+          position: absolute;
+          top: -5px;
+          right: -5px;
 `;
 
 
