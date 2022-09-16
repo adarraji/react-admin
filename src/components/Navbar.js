@@ -49,9 +49,8 @@ const Navbar = () => {
                             </Icon>
                         </Item>
                         <Item>
-
+                            <Image alt="" src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
                         </Item>
-
                     </Items>
                 </Wrapper>
             </Container>
