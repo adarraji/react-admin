@@ -120,7 +120,8 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-    
+    display: flex;
+    align-items: start;
 `;
 
 const ItemTitle = styled.span`
