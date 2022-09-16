@@ -7,6 +7,7 @@ const Sidebar = () => {
             <Top>
                 <LogoTitle>Logo</LogoTitle>
             </Top>
+            <HR />
             <Center>
                 <DashboardList>
                     <DashboardItem>Dashboard Item</DashboardItem>
@@ -36,6 +37,11 @@ const LogoTitle = styled.span`
     font-size: 20px;
     font-weight: bold;
     color: #6439ff;
+`;
+
+const HR = styled.hr`
+    height: 0;
+    border: 0.5px solid lightgray;
 `;
 
 const Center = styled.div`
