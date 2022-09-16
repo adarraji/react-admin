@@ -31,6 +31,8 @@ const HomeContainer = styled.div`
 
 const Widgets = styled.div`
    display: flex;
+   padding: 20px;
+   gap: 20px;
 `;
 
 
