@@ -5,15 +5,18 @@ import Sidebar from "../components/Sidebar";
 const home = () => {
     return (
         <Container>
-
             <Sidebar />
-
+            <HomeContainer>Home container</HomeContainer>
         </Container>
     )
 }
 
 const Container = styled.div`
-    
+   display: flex;
+`;
+
+const HomeContainer = styled.div`   
+    flex:6;
 `;
 
 

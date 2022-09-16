@@ -21,8 +21,8 @@ const Sidebar = () => {
     )
 }
 
-const Container = styled.div`
-    
+const Container = styled.div`     
+     flex:1;
 `;
 
 const Top = styled.div`
