@@ -128,7 +128,11 @@ const ItemTitle = styled.span`
 `;
 
 const MainTitle = styled.p`
-    
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 5px;
 `;
 
 
