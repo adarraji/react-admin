@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const Sidebar = () => {
     return (
@@ -9,11 +10,45 @@ const Sidebar = () => {
             </Top>
             <HR />
             <Center>
-                <DashboardList>
-                    <DashboardItem>Dashboard Item</DashboardItem>
-                    <DashboardItem>Dashboard Item</DashboardItem>
-                    <DashboardItem>Dashboard Item</DashboardItem>
-                </DashboardList>
+                <List>
+                    <ListItem>
+                        <DashboardIcon />
+                        <ListItemTitle>Dashboard</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Users</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Products</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Orders</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Delivery</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Stats</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Notifications</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>System Health</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Logs</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Settings</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Profile</ListItemTitle>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemTitle>Logout</ListItemTitle>
+                    </ListItem>
+                </List>
             </Center>
             <Bottom>
                 Color Options
@@ -51,13 +86,17 @@ const Center = styled.div`
     padding-left: 10px;
 `;
 
-const DashboardList = styled.ul`
+const List = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
 `;
 
-const DashboardItem = styled.li`
+const ListItem = styled.li`
+    
+`;
+
+const ListItemTitle = styled.span`
     
 `;
 
