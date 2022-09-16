@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 
 const Navbar = () => {
     return (
@@ -11,6 +17,42 @@ const Navbar = () => {
                         <Input type="text" placeholder="Search..." />
                         <SearchOutlinedIcon />
                     </Search>
+                    <Items>
+                        <Item>
+                            <Icon>
+                                <LanguageOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+                            <Icon>
+                                <DarkModeOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+                            <Icon>
+                                <FullscreenExitOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+                            <Icon>
+                                <NotificationsNoneOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+                            <Icon>
+                                <ChatBubbleOutlineOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+                            <Icon>
+                                <ListOutlinedIcon />
+                            </Icon>
+                        </Item>
+                        <Item>
+
+                        </Item>
+
+                    </Items>
                 </Wrapper>
             </Container>
         </div>
@@ -41,6 +83,11 @@ const Input = styled.input`
         }
 `;
 
+const Items = styled.div`
+   
+`;
+
+
 const Item = styled.div`
    
 `;
@@ -48,5 +95,10 @@ const Item = styled.div`
 const Icon = styled.div`
    
 `;
+
+const Image = styled.img`
+   
+`;
+
 
 export default Navbar
