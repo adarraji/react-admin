@@ -47,14 +47,14 @@ const HR = styled.hr`
     border: 0.5px solid lightgray;
 `;
 
-
-
 const Center = styled.div`
-    
+    padding-left: 10px;
 `;
 
 const DashboardList = styled.ul`
-    
+    list-style: none;
+    margin: 0;
+    padding: 0;
 `;
 
 const DashboardItem = styled.li`
