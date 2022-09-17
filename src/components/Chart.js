@@ -44,7 +44,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
-  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const ChartGrid = styled.div`
