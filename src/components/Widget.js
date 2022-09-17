@@ -3,7 +3,8 @@ import styled from "styled-components";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnimport AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
+import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 
 
 
@@ -58,7 +59,7 @@ const Widget = ({ type }) => {
                 link: "See details",
                 icon: (
                     <Icon>
-                        <MonetizationOnOutlinedIcon style={{ color: "purple", backgroundColor: "rgba(128, 0, 128, 0.2)" }} />
+                        <AccountBalanceWalletOutlinedIcon style={{ color: "purple", backgroundColor: "rgba(128, 0, 128, 0.2)" }} />
                     </Icon>
                 )
             };
