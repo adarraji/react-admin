@@ -1,9 +1,14 @@
 import React from "react"
 
 const Table = () => {
-  return (
-    <div>Table</div>
-  )
+    return (
+        <Container>
+
+        </Container>
+    )
 }
+
+const Container = styled.div`
+`;
 
 export default Table
