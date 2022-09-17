@@ -101,4 +101,11 @@ const List = () => {
 const Container = styled.div`
 `;
 
+const Image = styled.img`
+`;
+
+const Status = styled.span`
+`;
+
+
 export default List
