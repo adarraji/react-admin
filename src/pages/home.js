@@ -11,17 +11,19 @@ const home = () => {
     return (
         <Container>
             <Sidebar />
-            <Navbar />
-            <Widgets>
-                <Widget type="user" />
-                <Widget type="order" />
-                <Widget type="earning" />
-                <Widget type="balance" />
-            </Widgets>
-            <Charts>
-                <Featured />
-                <Chart />
-            </Charts>
+            <HomeContainer>
+                <Navbar />
+                <Widgets>
+                    <Widget type="user" />
+                    <Widget type="order" />
+                    <Widget type="earning" />
+                    <Widget type="balance" />
+                </Widgets>
+                <Charts>
+                    <Featured />
+                    <Chart />
+                </Charts>
+            </HomeContainer>
         </Container>
     )
 }
