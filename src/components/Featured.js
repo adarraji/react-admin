@@ -11,13 +11,16 @@ const Featured = () => {
     return (
         <Container>
             <Top>
-                <Title>Total Revenue</Title>
+                <MainTitle>Total Revenue</MainTitle>
                 <MoreVertIcon fontSize="small" />
             </Top>
             <Bottom>
                 <FeaturedChart>
                     <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
                 </FeaturedChart>
+                <Title>Total sales made today</Title>
+                <Amount>$420</Amount>
+                <Desc>Previous transactions processing. Last payments may not be included.</Desc>
             </Bottom>
         </Container>
     )
@@ -36,7 +39,7 @@ const Top = styled.div`
     color: gray;
 `;
 
-const Title = styled.h1`
+const MainTitle = styled.h1`
     font-size: 16px;
     font-weight: 500;
 `;
@@ -50,15 +53,24 @@ const FeaturedChart = styled.div`
     height: 100px;
 `;
 
-// const Bottom = styled.div`
+const Title = styled.p`
+    font-size: 16px;
+    font-weight: 500
+`;
 
-// `;
-// const Bottom = styled.div`
+const Amount = styled.p`
+    font-size: 30px;
+`;
 
-// `;
+const Desc = styled.p`
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+    text-align: center;
+`;
 
-// const Bottom = styled.div`
 
-// `;
+
+
 
 export default Featured
