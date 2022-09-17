@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 
 
@@ -13,7 +16,7 @@ const Featured = () => {
             </Top>
             <Bottom>
                 <FeaturedChart>
-
+                    <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
                 </FeaturedChart>
             </Bottom>
         </Container>
@@ -43,7 +46,8 @@ const Bottom = styled.div`
 `;
 
 const FeaturedChart = styled.div`
-
+    width: 100px;
+    height: 100px;
 `;
 
 // const Bottom = styled.div`
