@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Widget from "../components/Widget";
 import Featured from "../components/Featured";
 import Chart from "../components/Chart";
+import Table from "../components/Table";
 
 
 const home = () => {
@@ -23,6 +24,10 @@ const home = () => {
                     <Featured />
                     <Chart />
                 </Charts>
+                <ListContainer>
+                    <ListTitle>Latest Transactions</ListTitle>
+                    <Table />
+                </ListContainer>
             </HomeContainer>
         </Container>
     )
@@ -48,6 +53,10 @@ const Charts = styled.div`
     gap: 20px;
 `;
 
+const ListContainer = styled.div`
+`;
 
+const ListTitle = styled.div`
+`;
 
 export default home
