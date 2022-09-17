@@ -12,7 +12,7 @@ const Widget = () => {
                 <Link>See all users</Link>
             </Left>
             <Right>
-                <Percentage>
+                <Percentage color="green">
                     <KeyboardArrowUpIcon />
                     20%
                 </Percentage>
@@ -46,18 +46,30 @@ const Right = styled.div`
 `;
 
 const Title = styled.span`
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
 `;
 
 
 const Counter = styled.span`
+    font-size: 28px;
+    font-weight: 300;
 `;
 
 
 const Link = styled.span`
+    width: max-content;
+    font-size: 12px;
+    border-bottom: 1px solid gray;
 `;
 
 
 const Percentage = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: ${(props) => props.color}
 `;
 
 
