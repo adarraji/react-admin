@@ -3,7 +3,7 @@ import styled from "styled-components";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 
-const Widget = () => {
+const Widget = ({ type }) => {
     return (
         <Container>
             <Left>
