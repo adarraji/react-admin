@@ -45,7 +45,12 @@ const MainTitle = styled.h1`
 `;
 
 const Bottom = styled.div`
-
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 `;
 
 const FeaturedChart = styled.div`
