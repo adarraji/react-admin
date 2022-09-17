@@ -3,7 +3,7 @@ import styled from "styled-components";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnimport AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
+import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 
 
@@ -11,6 +11,10 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 const Widget = ({ type }) => {
 
     let data;
+
+    //temporary
+    const amount = 100;
+    const diff = 20;
 
     switch (type) {
         case "user":
@@ -72,17 +76,17 @@ const Widget = ({ type }) => {
     return (
         <Container>
             <Left>
-                <Title>USERS</Title>
-                <Counter>21312</Counter>
-                <Link>See all users</Link>
+                <Title>{data.title}</Title>
+                <Counter>{data.isMoney && "$"} {amount}</Counter>
+                <Link>{data.link}</Link>
             </Left>
             <Right>
                 <Percentage color="green">
                     <KeyboardArrowUpIcon />
-                    20%
+                    {diff} %
                 </Percentage>
                 <Icon>
-                    <PersonOutlinedIcon style={{ "font-size": "18px" }} />
+                    {data.icon}
                 </Icon>
             </Right>
         </Container>
