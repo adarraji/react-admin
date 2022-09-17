@@ -54,9 +54,16 @@ const Charts = styled.div`
 `;
 
 const ListContainer = styled.div`
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    margin: 20px;
 `;
 
 const ListTitle = styled.div`
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 15px;
 `;
 
 export default home
