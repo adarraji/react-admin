@@ -16,7 +16,9 @@ const Widget = () => {
                     <KeyboardArrowUpIcon />
                     20%
                 </Percentage>
-                <PersonOutlinedIcon />
+                <Icon>
+                    <PersonOutlinedIcon style={{ "font-size": "18px" }} />
+                </Icon>
             </Right>
         </Container>
     )
@@ -70,6 +72,12 @@ const Percentage = styled.div`
     align-items: center;
     font-size: 14px;
     color: ${(props) => props.color}
+`;
+
+const Icon = styled.div`
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-end;
 `;
 
 
