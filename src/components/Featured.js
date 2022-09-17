@@ -3,6 +3,8 @@ import styled from "styled-components";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 
 
 
@@ -21,6 +23,29 @@ const Featured = () => {
                 <Title>Total sales made today</Title>
                 <Amount>$420</Amount>
                 <Desc>Previous transactions processing. Last payments may not be included.</Desc>
+                <Summary>
+                    <Item>
+                        <ItemTitle>Target</ItemTitle>
+                        <ItemResult color="red">
+                            <KeyboardArrowDownIcon fontSize="small" />
+                            <ResultAmount>12.4k</ResultAmount>
+                        </ItemResult>
+                    </Item>
+                    <Item>
+                        <ItemTitle>Last week</ItemTitle>
+                        <ItemResult color="green">
+                            <KeyboardArrowDownIcon fontSize="small" />
+                            <ResultAmount>12.4k</ResultAmount>
+                        </ItemResult>
+                    </Item>
+                    <Item>
+                        <ItemTitle>Last Month</ItemTitle>
+                        <ItemResult color="green">
+                            <KeyboardArrowDownIcon fontSize="small" />
+                            <ResultAmount>12.4k</ResultAmount>
+                        </ItemResult>
+                    </Item>
+                </Summary>
             </Bottom>
         </Container>
     )
@@ -74,7 +99,33 @@ const Desc = styled.p`
     text-align: center;
 `;
 
+const Summary = styled.div`
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+`;
 
+const Item = styled.div`
+   text-align: center;
+`;
+
+const ItemTitle = styled.div`
+   font-size: 14px;
+   color: gray;
+`;
+
+const ItemResult = styled.div`
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+   font-size: 14px;
+   color: ${props => props.color};
+`;
+
+const ResultAmount = styled.div`
+   
+`;
 
 
 
