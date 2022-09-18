@@ -17,9 +17,12 @@ const List = () => {
 }
 
 const Container = styled.div`
+    display: flex;
+    width: 100%;
 `;
 
 const ListContainer = styled.div`
+    flex: 6;
 `;
 
 export default List
