@@ -51,7 +51,8 @@ const DataTable = () => {
 }
 
 const Container = styled.div`
-    
+    height: 600px;
+    padding: 20px;
 `;
 
 const Title = styled.div`
