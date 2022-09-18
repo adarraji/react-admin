@@ -1,9 +1,25 @@
-import React from "react"
+import React from "react";
+import styled from "styled-components";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
-const list = () => {
+const List = () => {
     return (
-        <div>list</div>
+        <Container>
+            <Sidebar />
+            <ListContainer>
+                <Navbar />
+                data table
+            </ListContainer>
+        </Container>
+
     )
 }
 
-export default list
+const Container = styled.div`
+`;
+
+const ListContainer = styled.div`
+`;
+
+export default List
