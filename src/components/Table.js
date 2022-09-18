@@ -92,7 +92,11 @@ const List = () => {
                                 <TableCell >{row.date}</TableCell>
                                 <TableCell >{row.amount}</TableCell>
                                 <TableCell >{row.method}</TableCell>
-                                <TableCell >{row.status}</TableCell>
+                                <TableCell >
+                                    <Status status={row.status}>
+                                        {row.status}
+                                    </Status>
+                                </TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
@@ -119,6 +123,8 @@ const Image = styled.img`
 `;
 
 const Status = styled.span`
+    color: ${props => props.status === "Approved" ? "green" : "goldenrod"};
+    background-color: ${props => props.status === "rgba(0, 128, 0, 0.151)" ? "green" : "rgba(189, 189, 3, 0.103)"};
 `;
 
 
