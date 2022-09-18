@@ -1,3 +1,6 @@
+import styled from "styled-components";
+
+
 export const userColumns = [
     { field: "id", headerName: "ID", width: 70 },
     {
@@ -6,10 +9,10 @@ export const userColumns = [
         width: 230,
         renderCell: (params) => {
             return (
-                <div className="cellWithImg">
-                    <img className="cellImg" src={params.row.img} alt="avatar" />
+                <CellWithImage>
+                    <CellImage src={params.row.img} alt="avatar" />
                     {params.row.username}
-                </div>
+                </CellWithImage>
             );
         },
     },
@@ -121,3 +124,17 @@ export const userRows = [
         age: 65,
     },
 ];
+
+const CellWithImage = styled.div`
+    display: flex;
+    align-items: center;
+    
+`;
+
+const CellImage = styled.img`
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+`;
