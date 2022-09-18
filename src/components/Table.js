@@ -82,7 +82,12 @@ const List = () => {
                         {rows.map((row) => (
                             <TableRow key={row.id}>
                                 <TableCell>{row.id}</TableCell>
-                                <TableCell >{row.product}</TableCell>
+                                <TableCell >
+                                    <CellWrapper>
+                                        <Image alt="" src={row.img} />
+                                        {row.product}
+                                    </CellWrapper>
+                                </TableCell>
                                 <TableCell >{row.customer}</TableCell>
                                 <TableCell >{row.date}</TableCell>
                                 <TableCell >{row.amount}</TableCell>
@@ -100,7 +105,17 @@ const List = () => {
 const Container = styled.div`
 `;
 
+const CellWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
 const Image = styled.img`
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
 `;
 
 const Status = styled.span`
