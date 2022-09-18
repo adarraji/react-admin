@@ -123,6 +123,8 @@ const Image = styled.img`
 `;
 
 const Status = styled.span`
+    padding: 5px;
+    border-radius: 5px;
     color: ${props => props.status === "Approved" ? "green" : "goldenrod"};
     background-color: ${props => props.status === "rgba(0, 128, 0, 0.151)" ? "green" : "rgba(189, 189, 3, 0.103)"};
 `;
