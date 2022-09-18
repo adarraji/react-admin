@@ -69,26 +69,25 @@ const List = () => {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">Calories</TableCell>
-                            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                            <TableCell className="tableCell">Tracking ID</TableCell>
+                            <TableCell className="tableCell">Product</TableCell>
+                            <TableCell className="tableCell">Customer</TableCell>
+                            <TableCell className="tableCell">Date</TableCell>
+                            <TableCell className="tableCell">Amount</TableCell>
+                            <TableCell className="tableCell">Payment Method</TableCell>
+                            <TableCell className="tableCell">Status</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {rows.map((row) => (
-                            <TableRow
-                                key={row.name}
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-                                <TableCell component="th" scope="row">
-                                    {row.name}
-                                </TableCell>
-                                <TableCell align="right">{row.calories}</TableCell>
-                                <TableCell align="right">{row.fat}</TableCell>
-                                <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.protein}</TableCell>
+                            <TableRow key={row.id}>
+                                <TableCell>{row.id}</TableCell>
+                                <TableCell >{row.product}</TableCell>
+                                <TableCell >{row.customer}</TableCell>
+                                <TableCell >{row.date}</TableCell>
+                                <TableCell >{row.amount}</TableCell>
+                                <TableCell >{row.method}</TableCell>
+                                <TableCell >{row.status}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
