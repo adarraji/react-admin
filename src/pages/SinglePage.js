@@ -12,8 +12,17 @@ const SinglePage = () => {
             <SingleContainer>
                 <Navbar />
                 <Top>
-                    <Left>Left</Left>
-                    <Left>Right</Left>
+                    <Left>
+                        <Title>Information</Title>
+                        <Item>
+                            <ItemImage
+                                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                alt=""
+                            />
+                            <Details>Details</Details>
+                        </Item>
+                    </Left>
+                    <Right>Right</Right>
                 </Top>
                 <Bottom>
                     Bottom
@@ -33,15 +42,41 @@ const SingleContainer = styled.div`
 `;
 
 const Top = styled.div`
-   
+   display: flex;
+   padding: 20px;
+   gap: 20px;
 `;
 
 const Left = styled.div`
+    flex:1;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+`;
+
+const Title = styled.h1`
    
 `;
 
-const Right = styled.div`
+const Item = styled.div`
+   display: flex;
+   gap: 20px;
+`;
+
+const ItemImage = styled.img`
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+`;
+
+const Details = styled.div`
    
+`;
+
+
+const Right = styled.div`
+   flex:2;
 `;
 
 const Bottom = styled.div`
