@@ -4,20 +4,6 @@ import { userColumns, userRows } from "../datatablesource";
 import { Link } from "react-router-dom";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
-// {
-//     field: "user",
-//     headerName: "User",
-//     width: 230,
-//     renderCell: (params) => {
-//         return (
-//             <CellWithImage>
-//                 <CellImage src={params.row.img} alt="avatar" />
-//                 {params.row.username}
-//             </CellWithImage>
-//         );
-//     },
-// },
-
 const DataTable = () => {
     const actionColumn = [
         {
