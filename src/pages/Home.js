@@ -22,7 +22,7 @@ const home = () => {
                 </Widgets>
                 <Charts>
                     <Featured />
-                    <Chart />
+                    <Chart aspect={2 / 1} />
                 </Charts>
                 <ListContainer>
                     <ListTitle>Latest Transactions</ListTitle>

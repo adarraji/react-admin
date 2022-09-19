@@ -41,7 +41,9 @@ const SinglePage = () => {
                             </Details>
                         </Item>
                     </Left>
-                    <Right>Right</Right>
+                    <Right>
+                        <Chart aspect={3 / 1} />
+                    </Right>
                 </Top>
                 <Bottom>
                     Bottom
