@@ -40,16 +40,26 @@ const Container = styled.div`
 `;
 
 const CellAction = styled.div`
-    
+    display: flex;
+    align-items: center;
+    gap: 15px;    
 `;
 
 const ViewButton = styled.div`
-    
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: darkblue;
+    border: 1px dotted rgba(0, 0, 139, 0.596);
+    cursor: pointer;
 `;
 
 
 const DeleteButton = styled.div`
-    
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: crimson;
+    border: 1px dotted rgba(220, 20, 60, 0.6);
+    cursor: pointer;
 `;
 
 
