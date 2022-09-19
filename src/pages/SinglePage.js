@@ -11,7 +11,13 @@ const SinglePage = () => {
             <Sidebar />
             <SingleContainer>
                 <Navbar />
-                Single
+                <Top>
+                    <Left>Left</Left>
+                    <Left>Right</Left>
+                </Top>
+                <Bottom>
+                    Bottom
+                </Bottom>
             </SingleContainer>
         </Container>
     )
@@ -24,6 +30,22 @@ const Container = styled.div`
 
 const SingleContainer = styled.div`
    flex:6;
+`;
+
+const Top = styled.div`
+   
+`;
+
+const Left = styled.div`
+   
+`;
+
+const Right = styled.div`
+   
+`;
+
+const Bottom = styled.div`
+   
 `;
 
 
