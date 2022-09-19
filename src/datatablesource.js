@@ -33,9 +33,9 @@ export const userColumns = [
         width: 160,
         renderCell: (params) => {
             return (
-                <div className={`cellWithStatus ${params.row.status}`}>
+                <CellWithStatus status={params.row.status}>
                     {params.row.status}
-                </div>
+                </CellWithStatus>
             );
         },
     },
@@ -137,4 +137,11 @@ const CellImage = styled.img`
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+`;
+
+const CellWithStatus = styled.div`
+    padding: 5px;
+    border-radius: 5pxs;
+    background-color: ${props => props.status === "active" ? "rgba(0, 128, 0, 0.05)" : (props.status === "pending" ? "rgba(255, 217, 0, 0.05)" : "rgba(255, 0, 0, 0.05)")};
+    color: ${props => props.status === "active" ? "green" : (props.status === "pending" ? "goldenrod" : "crimson")};
 `;
