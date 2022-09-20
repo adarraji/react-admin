@@ -42,7 +42,7 @@ const SinglePage = () => {
                         </Item>
                     </Left>
                     <Right>
-                        <Chart aspect={3 / 1} />
+                        <Chart aspect={3 / 1} title="User Spending ( Last 6 Months)" />
                     </Right>
                 </Top>
                 <Bottom>
