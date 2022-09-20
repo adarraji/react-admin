@@ -13,7 +13,9 @@ const DataTable = () => {
             renderCell: () => {
                 return (
                     <CellAction>
-                        <ViewButton>View</ViewButton>
+                        <Link to="/users/test" style={{ textDecoration: "none" }}>
+                            <ViewButton>View</ViewButton>
+                        </Link>
                         <DeleteButton>Delete</DeleteButton>
                     </CellAction>
                 )
