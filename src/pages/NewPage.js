@@ -47,6 +47,7 @@ const NewPage = () => {
                                 <Label>Country</Label>
                                 <Input type="text" placeholder="USA" />
                             </FormInput>
+                            <Button>Send</Button>
                         </Form>
                     </Right>
                 </Bottom>
@@ -114,6 +115,10 @@ const Input = styled.input`
 `;
 
 const Label = styled.label`
+  
+`;
+
+const Button = styled.button`
   
 `;
 
