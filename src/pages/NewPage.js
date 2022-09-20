@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+
 
 
 const NewPage = () => {
@@ -20,8 +22,10 @@ const NewPage = () => {
                     <Right>
                         <Form>
                             <FormInput>
-                                <Label>Username</Label>
-                                <Input type="text" placeholder="john_doe" />
+                                <Label htmlFor="file">
+                                    <Icon> <DriveFolderUploadOutlinedIcon /> </Icon>
+                                </Label>
+                                <FileInput type="file" id="file" />
                             </FormInput>
                             <FormInput>
                                 <Label>Full Name</Label>
@@ -110,12 +114,16 @@ const FormInput = styled.div`
   
 `;
 
+const FileInput = styled.input`
+    display: none;
+`;
+
 const Input = styled.input`
   
 `;
 
 const Label = styled.label`
-  
+    
 `;
 
 const Button = styled.button`
@@ -123,7 +131,7 @@ const Button = styled.button`
 `;
 
 const Icon = styled.div`
-  
+    cursor: pointer;
 `;
 
 
