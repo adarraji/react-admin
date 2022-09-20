@@ -6,14 +6,14 @@ import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUpload
 
 
 
-const NewPage = () => {
+const NewPage = ({ inputs, title }) => {
     return (
         <Container>
             <Sidebar />
             <NewContainer>
                 <Navbar />
                 <Top>
-                    <Title>Add New User</Title>
+                    <Title>{title}</Title>
                 </Top>
                 <Bottom>
                     <Left>
@@ -27,34 +27,14 @@ const NewPage = () => {
                                 </Label>
                                 <FileInput type="file" id="file" />
                             </FormInput>
-                            <FormInput>
-                                <Label>Username</Label>
-                                <Input type="text" placeholder="john_doe" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Full Name</Label>
-                                <Input type="text" placeholder="John Doe" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Email</Label>
-                                <Input type="email" placeholder="john_doe@gmail.com" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Phone</Label>
-                                <Input type="text" placeholder="+1 2345 6789" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Password</Label>
-                                <Input type="password" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Address</Label>
-                                <Input type="text" placeholder="Address" />
-                            </FormInput>
-                            <FormInput>
-                                <Label>Country</Label>
-                                <Input type="text" placeholder="USA" />
-                            </FormInput>
+                            {
+                                inputs.map(input => (
+                                    <FormInput key={input.id}>
+                                        <Label>{input.label}</Label>
+                                        <Input type={input.type} placeholder={input.placeholder} />
+                                    </FormInput>
+                                ))
+                            }
                             <Button>Send</Button>
                         </Form>
                     </Right>
