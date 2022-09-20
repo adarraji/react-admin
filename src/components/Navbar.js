@@ -19,25 +19,25 @@ const Navbar = () => {
                     </Search>
                     <Items>
                         <Item>
-                            <LanguageOutlinedIcon style={{ "font-size": "20px" }} />
+                            <LanguageOutlinedIcon style={{ "fontSize": "20px" }} />
                             English
                         </Item>
                         <Item>
-                            <DarkModeOutlinedIcon style={{ "font-size": "20px" }} />
+                            <DarkModeOutlinedIcon style={{ "fontSize": "20px" }} />
                         </Item>
                         <Item>
-                            <FullscreenExitOutlinedIcon style={{ "font-size": "20px" }} />
+                            <FullscreenExitOutlinedIcon style={{ "fontSize": "20px" }} />
                         </Item>
                         <Item>
-                            <NotificationsNoneOutlinedIcon style={{ "font-size": "20px" }} />
+                            <NotificationsNoneOutlinedIcon style={{ "fontSize": "20px" }} />
                             <Counter>1</Counter>
                         </Item>
                         <Item>
-                            <ChatBubbleOutlineOutlinedIcon style={{ "font-size": "20px" }} />
+                            <ChatBubbleOutlineOutlinedIcon style={{ "fontSize": "20px" }} />
                             <Counter>2</Counter>
                         </Item>
                         <Item>
-                            <ListOutlinedIcon style={{ "font-size": "20px" }} />
+                            <ListOutlinedIcon style={{ "fontSize": "20px" }} />
                         </Item>
                         <Item>
                             <Image alt="" src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
