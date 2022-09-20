@@ -25,6 +25,12 @@ const DataTable = () => {
 
     return (
         <Container>
+            <Title>
+                Add New Users
+                <Link to="/users/new" style={LinkStyles}>
+                    Add New
+                </Link>
+            </Title>
             <DataGrid
                 rows={userRows}
                 columns={userColumns.concat(actionColumn)}
@@ -66,11 +72,24 @@ const DeleteButton = styled.div`
 
 
 const Title = styled.div`
-    
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
-const LinkTo = styled.div`
-    
-`;
+const LinkStyles = {
+    textDecoration: "none",
+    color: "green",
+    fontSize: "16px",
+    fontWeight: "400",
+    border: "1px solid green",
+    padding: "5px",
+    borderRadius: "5px",
+    cursor: "pointer"
+}
 
 export default DataTable
