@@ -12,12 +12,15 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <Container>
             <Top>
-                <LogoTitle>Logo</LogoTitle>
+                <Link to="/">
+                    <LogoTitle>Logo</LogoTitle>
+                </Link>
             </Top>
             <HR />
             <Center>
@@ -30,18 +33,22 @@ const Sidebar = () => {
                         <Text>Dashboard</Text>
                     </Item>
                     <Title>LISTS</Title>
-                    <Item>
-                        <Icon>
-                            <Person2OutlinedIcon />
-                        </Icon>
-                        <Text>Users</Text>
-                    </Item>
-                    <Item>
-                        <Icon>
-                            <StoreIcon />
-                        </Icon>
-                        <Text>Products</Text>
-                    </Item>
+                    <Link to="/users" style={{ textDecoration: "none" }}>
+                        <Item>
+                            <Icon>
+                                <Person2OutlinedIcon />
+                            </Icon>
+                            <Text>Users</Text>
+                        </Item>
+                    </Link>
+                    <Link to="/products" style={{ textDecoration: "none" }}>
+                        <Item>
+                            <Icon>
+                                <StoreIcon />
+                            </Icon>
+                            <Text>Products</Text>
+                        </Item>
+                    </Link>
                     <Item>
                         <Icon>
                             <CreditCardIcon />
@@ -105,7 +112,7 @@ const Sidebar = () => {
                 <ColorOption></ColorOption>
                 <ColorOption></ColorOption>
             </Bottom>
-        </Container>
+        </Container >
     )
 }
 
