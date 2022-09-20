@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -7,6 +7,8 @@ import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUpload
 
 
 const NewPage = ({ inputs, title }) => {
+    const [file, setFile] = useState("");
+    console.log(file);
     return (
         <Container>
             <Sidebar />
@@ -17,7 +19,7 @@ const NewPage = ({ inputs, title }) => {
                 </Top>
                 <Bottom>
                     <Left>
-                        <Image alt="" src="https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg" />
+                        <Image alt="" src={file ? URL.createObjectURL(file) : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"} />
                     </Left>
                     <Right>
                         <Form>
@@ -25,7 +27,7 @@ const NewPage = ({ inputs, title }) => {
                                 <Label htmlFor="file">
                                     Image: <Icon> <DriveFolderUploadOutlinedIcon /> </Icon>
                                 </Label>
-                                <FileInput type="file" id="file" />
+                                <FileInput type="file" id="file" onChange={e => setFile(e.target.files[0])} />
                             </FormInput>
                             {
                                 inputs.map(input => (
