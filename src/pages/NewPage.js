@@ -23,9 +23,13 @@ const NewPage = () => {
                         <Form>
                             <FormInput>
                                 <Label htmlFor="file">
-                                    <Icon> <DriveFolderUploadOutlinedIcon /> </Icon>
+                                    Image: <Icon> <DriveFolderUploadOutlinedIcon /> </Icon>
                                 </Label>
                                 <FileInput type="file" id="file" />
+                            </FormInput>
+                            <FormInput>
+                                <Label>Username</Label>
+                                <Input type="text" placeholder="john_doe" />
                             </FormInput>
                             <FormInput>
                                 <Label>Full Name</Label>
@@ -107,11 +111,14 @@ const Right = styled.div`
 `;
 
 const Form = styled.form`
-  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
 `;
 
 const FormInput = styled.div`
-  
+    width: 40%;
 `;
 
 const FileInput = styled.input`
@@ -119,15 +126,27 @@ const FileInput = styled.input`
 `;
 
 const Input = styled.input`
-  
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
 `;
 
 const Label = styled.label`
-    
+    display: flex;
+    align-items: center;
+    gap: 10px;
 `;
 
 const Button = styled.button`
-  
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
 `;
 
 const Icon = styled.div`
