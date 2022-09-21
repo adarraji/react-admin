@@ -2,7 +2,7 @@
 
 React Admin Dashboard. Home page has different widgets, progress bar, interactive chart and a table. The app has different pages with data tables for users, products, signle user and signle product. You can select, view, delete, sort and filter items in theses tables. You can view a signle item in table by clicking on view button.
 
-You can see the website [here](https://dashboard.heroku.com/apps/react-admin2)
+You can see the website [here](https://react-admin2.herokuapp.com/)
 
 To run the application
 
@@ -27,7 +27,7 @@ To run the application
 ## Deployment
 Deployed on Heroku
 
-You can see the website [here](https://dashboard.heroku.com/apps/react-admin2)
+You can see the website [here](https://react-admin2.herokuapp.com/)
 
 
 ## Authors
