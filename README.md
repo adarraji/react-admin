@@ -41,7 +41,9 @@ You can see the website [here](https://react-admin2.herokuapp.com/)
 Home page
 
 <br />
+
 ![Image 1](./images/image-01.png)
+
 <br />
 <br />
 
